@@ -1,0 +1,111 @@
+/* Resetting default styles: 
+   Sets margin and padding to 0 for all elements to eliminate 
+   spacing differences between browsers. 
+   'font-family' applies the 'Poppins' font to all elements, 
+   and 'box-sizing: border-box' ensures that the width and height 
+   of elements include padding and border. */
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling the hero section: 
+   Sets a width of 100%, minimum height of 100% of the viewport 
+   (entire screen), applies a background gradient from light blue to dark purple, 
+   and centers content vertically and horizontally using flexbox. 
+   Also sets the direction of elements to column and text color to white. */
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #90fcf9, #63b4d1, #7699d4, #9448bc, #480355);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Styling the title in the hero section: 
+   Sets the font size to 45px, font weight to 500, 
+   adds negative margin at the top and space at the bottom. */
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+
+/* Customizing part of the title: 
+   Any text surrounded by <span> in <h1> will have the color set to #ff2963 (pink). */
+.hero h1 span{
+    color: #90fcf9;
+}
+
+/* Styling the textarea element: 
+   Sets the width to 600px and height to 250px, 
+   changes the background to dark purple and text to white, 
+   increases font size, removes border and outline, 
+   adds padding for the interior, rounds the corners, and prevents resizing. */
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #480355;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+
+.row{
+    width: 520px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background: #90fcf9;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s ease, border-radius 0.5s ease, transform 0.5s ease, font-size 0.5s ease; 
+    
+}
+
+button:hover{
+    background: linear-gradient(45deg, #90fcf9, #63b4d1);
+    border-radius: 40px;
+    transform: scale(1.1); /* Uses transform for the scaling effect */
+    font-size: 18px;
+}
+
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #480355;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+}
